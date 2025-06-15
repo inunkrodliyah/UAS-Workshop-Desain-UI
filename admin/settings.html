@@ -1,4 +1,4 @@
-settings admin
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -490,6 +490,10 @@ settings admin
         </main>
     </div>
     <script>
+                // Sidebar toggle functionality
+        document.querySelector('.sidebar-toggle').addEventListener('click', function() {
+            document.querySelector('.admin-sidebar').classList.toggle('active');
+        });
         // Modal functions (not needed for settings but kept for consistency)
         function openModal(modalId) {
             document.getElementById(modalId).style.display = 'block';

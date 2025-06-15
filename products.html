@@ -19,6 +19,7 @@
                 <span></span>
                 <span></span>
             </div>
+            <script src="js/script.js"></script>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="articles.html">Articles</a></li>
@@ -175,6 +176,7 @@
 
     <style>
         /* ===== PRODUCT CATALOG ===== */
+        
         .product-page .page-header {
             background-image: url('https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw5bdd28dd/images/beauty/0-HOME/SPA/Spa_PlazaAthenee_3700x2000.jpg?sw=2048');
         }
@@ -235,8 +237,8 @@
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: clamp(15px, 2vw, 20px);
             margin-bottom: 40px;
         }
 
