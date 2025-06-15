@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aroma Essence - Parfum Mewah</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .collection-card .price {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .product-info .price {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo-container">
+        <img src="images/parfume.png" alt="Flower Logo" class="flower-logo" />
+        <div class="logo">Aroma Essence</div>
+      </div>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+         <li><a href="index.html" >Home</a></li>
+        <li><a href="articles.html" >Articles</a></li>
+        <li><a href="products.html" >Products Catalog</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+        <li><a href="order-history.html" >History Transaction</a></li>
+        <li><a href="login.html" class="signup-btn">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>
+            Discover Your<br /><span class="signature-text">Signature Scent</span>
+          </h1>
+          <p>
+            Experience the luxury of bespoke fragrances crafted with the finest
+            ingredients from around the world.
+          </p>
+          <a href="#produk" class="cta-btn">Explore Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial-section">
+      <h2>Happy Customers, Lasting Impressions</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-container">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <blockquote>
+            "Aroma Essence bukan sekadar parfum—ini adalah pengalaman. Aromanya
+            tahan lama dan terasa begitu elegan. Saya selalu mendapat pujian
+            setiap kali menggunakannya."
+          </blockquote>
+          <div class="testimonial-author">
+            <img
+              src="https://www.whiteboardjournal.com/wp-content/uploads/2021/05/SOUR_FINAL-1621525657-870x870.jpeg"
+              alt="Livia M."
+            />
+            <div class="author-info">
+              <span class="author-name">Olivia M.</span>
+              <span class="author-title">Fashion Consultant</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <blockquote>
+            "Saya mencoba banyak parfum sebelumnya, tapi hanya di sini saya
+            menemukan aroma yang benar-benar mencerminkan kepribadian saya.
+            Mewah, lembut, dan sangat memikat."
+          </blockquote>
+          <div class="testimonial-author">
+            <img
+              src="https://lingkar.co/wp-content/uploads/2021/04/Reza-Rahardian.jpeg"
+              alt="Reza A."
+            />
+            <div class="author-info">
+              <span class="author-name">Reza Rahadian.</span>
+              <span class="author-title">CEO & Entrepreneur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Quote Left (Best Seller) -->
+    <section class="feature-quote" id="produk">
+      <div class="feature-container">
+        <div class="quote-content">
+          <h2>Our Best Seller Products</h2>
+          <div class="product-info">
+            <h3 class="product-name">Miss Dior Blooming Bouquet</h3>
+            <p class="product-aroma">
+              Floral fragrance with notes of rose, damascus and peony
+            </p>
+            <p class="product-desc">
+              A delicate and romantic fragrance that captures the essence of a
+              blooming bouquet. Perfect for daytime wear and special occasions.
+            </p>
+            <span class="price">Rp 1.800.000</span>
+          </div>
+          <div class="carousel-controls">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <span class="carousel-indicator">1/3</span>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="quote-carousel">
+          <div
+            class="carousel-slide active"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/default/dwf372b81d/Y0996347/Y0996347_C099600762_E01_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/default/dwd96cb385/Y0997193/Y0997193_C099700664_E01_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/default/dw4d659cc7/Y0997096/Y0997096_C099700474_E01_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Collection Section -->
+    <section class="new-collection-section" id="koleksi-baru">
+      <h2>New Collection</h2>
+      <div class="collection-grid">
+        <div class="collection-card">
+          <div
+            class="collection-image"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/default/dw054bf29a/Y0749427/Y0749427_F074928709_E02_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+          <h3>Sakura</h3>
+          <p>
+            Fragrant ode to blossoming cherry trees, Sakura tells an elegant
+            olfactory story of beauty that is both poetic and fleeting. Floral &
+            delicate fragrance.
+          </p>
+          <span class="price">Rp 7.100.000</span>
+          <span class="new-badge">New</span>
+        </div>
+        <div class="collection-card">
+          <div
+            class="collection-image"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/en_ID/dw51d792c5/Y0998029/Y0998029_C099800125_E03_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+          <h3>Miss Dior Parfum Mini Miss Solid Perfume</h3>
+          <p>
+            Alcohol-Free Fragrance Stick - Intense Floral, Fruity and Woody
+            Notes
+          </p>
+          <span class="price">Rp 1.800.000</span>
+          <span class="new-badge">New</span>
+        </div>
+        <div class="collection-card">
+          <div
+            class="collection-image"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/default/dw6eb978f5/Y0840550/Y0840550_F084055009_E02_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+          <h3>Gris Dior</h3>
+          <p>
+            Gris Dior is a unisex perfume that has a chypre and citrus scent.
+            This perfume has alternating notes of orange, violet, rose and wood,
+            creating an inseparable olfactory impression.
+          </p>
+          <span class="price">Rp 7.100.000</span>
+          <span class="new-badge">New</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Split Right (For Him) -->
+    <section class="feature-split" id="untuk-pria">
+      <div class="split-container">
+        <div class="split-carousel">
+          <div
+            class="carousel-slide active"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/default/dwd1bd0841/Y0996460/Y0996460_C099600755_E01_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/default/dwa03c3a74/Y0958160/Y0958160_F095355009_E02_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/default/dw99f2f029/Y0996157/Y0996157_C099600156_E01_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+        </div>
+        <div class="split-content">
+          <h2>For Him</h2>
+          <div class="product-info">
+            <h3 class="product-name">Sauvage Elixir</h3>
+            <p class="product-aroma">Elixir - Spicy, Fresh and Woody Notes</p>
+            <p class="product-desc">
+              A bold and intense fragrance for the modern man. Combines spicy
+              freshness with woody depth for a captivating scent.
+            </p>
+          </div>
+          <div class="carousel-controls">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <span class="carousel-indicator">1/3</span>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Split Right (For Her) -->
+    <section class="feature-split" id="untuk-wanita">
+      <div class="split-container">
+        <div class="split-carousel">
+          <div
+            class="carousel-slide active"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/en_ID/dw2942aa3c/Y0000020/Y0000020_E100000007_E01_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/default/dwfeb4a73c/Y0997166/Y0997166_C099700897_E01_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('https://whitelabel.dior.com/dw/image/v2/BJSW_PRD/on/demandware.static/-/Sites-pcd-whitelabel-master/en_ID/dw1e062078/Y1000012/Y1000012_E100000005_E01_GHC.jpg?sw=700&sh=700');
+            "
+          ></div>
+        </div>
+        <div class="split-content">
+          <h2>For Her</h2>
+          <div class="product-info">
+            <h3 class="product-name">J'adore Eau de Parfum Set</h3>
+            <p class="product-aroma">Eau de Parfum and Travel Spray</p>
+            <p class="product-desc">
+              A luxurious floral bouquet that celebrates femininity. The perfect
+              combination for women who appreciate timeless elegance.
+            </p>
+          </div>
+          <div class="carousel-controls">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <span class="carousel-indicator">1/3</span>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Form -->
+    <section class="cta-section" id="cta">
+      <div class="cta-container">
+        <h2>Try the product out for free.</h2>
+        <form class="cta-form">
+          <div class="form-group">
+            <input type="email" id="email" placeholder="email" />
+          </div>
+          <div class="form-group">
+            <input type="password" id="password" placeholder="password" />
+          </div>
+          <button type="submit" class="submit-btn">Start free trial</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Center -->
+    <footer class="footer-center">
+      <div class="footer-logo">
+        <div class="logo-container">
+          <img src="images/parfume.png" alt="Flower Logo" class="flower-logo" />
+          <div class="logo">Aroma Essence</div>
+        </div>
+        <p class="footer-tagline">
+          Luxury fragrances crafted with the finest ingredients.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Product</a>
+        <a href="#">New Collection</a>
+        <a href="#">For Him</a>
+        <a href="#">Aroma Essence</a>
+        <a href="#">For Her</a>
+        <a href="#">About</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+      <div class="footer-copyright">
+        © 2024 Aroma Essence. All rights reserved.
+      </div>
+      <div class="footer-policies">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Shipping Policy</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

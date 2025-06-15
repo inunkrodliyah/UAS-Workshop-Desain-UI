@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Essence Shop - Order History</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <body class="history-page">
+    <header>
+       <!-- Navbar -->
+<nav>
+ <div class="logo-container">
+                <img src="images/parfume.png" alt="Flower Logo" class="flower-logo">
+                <div class="logo">Aroma Essence</div>
+            </div>
+              <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+ <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html" >Articles</a></li>
+                <li><a href="products.html">Products Catalog</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                <li><a href="order-history.html" class="active">History Transaction</a></li>
+                <li><a href="login.html" class="signup-btn">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Your Order History</h1>
+                <p>View your past purchases and order details</p>
+            </div>
+        </section>
+
+        <section class="order-history">
+            <div class="container">
+                <div class="order-tabs">
+                    <button class="tab-btn active" data-tab="all-orders">All Orders</button>
+                    <button class="tab-btn" data-tab="completed">Completed</button>
+                    <button class="tab-btn" data-tab="processing">Processing</button>
+                    <button class="tab-btn" data-tab="cancelled">Cancelled</button>
+                </div>
+
+                <div class="order-list">
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-meta">
+                                <span class="order-number">Order #AE-2025-1001</span>
+                                <span class="order-date">Placed on Juni 17, 2025</span>
+                            </div>
+                            <div class="order-status completed">
+                                <i class="fas fa-check-circle"></i> Completed
+                            </div>
+                            <div class="order-total">
+                                Rp. 5.390.000
+                            </div>
+                        </div>
+                        <div class="order-details">
+                            <div class="order-items">
+                                <div class="order-item">
+                                    <img src="https://i.pinimg.com/736x/fc/67/26/fc6726e9470514e85ec28cdbdf15dd92.jpg" alt="Dior Sauvage">
+                                    <div class="item-info">
+                                        <h4>Dior Sauvage Eau de Parfum</h4>
+                                        <p>100ml bottle</p>
+                                        <span class="item-price">Rp. 2.500.000</span>
+                                        <span class="item-qty">Qty: 1</span>
+                                    </div>
+                                </div>
+                                <div class="order-item">
+                                    <img src="https://i.pinimg.com/736x/26/c2/a3/26c2a3026b37abc40b623fa900343443.jpg" alt="YSL Libre">
+                                    <div class="item-info">
+                                        <h4>YSL Libre Eau de Parfum</h4>
+                                        <p>90ml bottle</p>
+                                        <span class="item-price">Rp. 2.400.000</span>
+                                        <span class="item-qty">Qty: 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-actions">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-redo"></i> Reorder</a>
+                                <a href="order-detail.html" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-meta">
+                                <span class="order-number">Order #AE-2025-0928</span>
+                                <span class="order-date">Placed on Mei 28, 2025</span>
+                            </div>
+                            <div class="order-status completed">
+                                <i class="fas fa-check-circle"></i> Completed
+                            </div>
+                            <div class="order-total">
+                                Rp. 5.500.000
+                            </div>
+                        </div>
+                        <div class="order-details">
+                            <div class="order-items">
+                                <div class="order-item">
+                                  <img src="https://i.pinimg.com/736x/f0/b4/93/f0b493ea7bec16267281d3a2ed34cb4e.jpg" alt="Gucci Bloom">
+                                    <div class="item-info">
+                                        <h4>Gucci Bloom</h4>
+                                        <p>100ml bottle</p>
+                                        <span class="item-price">Rp. 2.300.000</span>
+                                        <span class="item-qty">Qty: 1</span>
+                                    </div>
+                                </div>
+                                <div class="order-item">
+                                   <img src="https://i.pinimg.com/736x/2c/5b/bb/2c5bbba3555ad148327df097942f81dc.jpg" alt="Chanel Bleu">
+                                    <div class="item-info">
+                                        <h4>Chanel Bleu de Chanel</h4>
+                                        <p>100ml bottle</p>
+                                        <span class="item-price">Rp. 2.700.000</span>
+                                        <span class="item-qty">Qty: 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-actions">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-redo"></i> Reorder</a>
+                                <a href="order-detail.html" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-meta">
+                                <span class="order-number">Order #AE-2025-0910</span>
+                                <span class="order-date">Placed on April 10, 2023</span>
+                            </div>
+                            <div class="order-status cancelled">
+                                <i class="fas fa-times-circle"></i> Cancelled
+                            </div>
+                            <div class="order-total">
+                                Rp. 5.390.000
+                            </div>
+                        </div>
+                        <div class="order-details">
+                            <div class="order-items">
+                                <div class="order-item">
+                                    <img src="https://i.pinimg.com/736x/fc/67/26/fc6726e9470514e85ec28cdbdf15dd92.jpg" alt="Dior Sauvage">
+                                    <div class="item-info">
+                                        <h4>Dior Sauvage Eau de Parfum</h4>
+                                        <p>100ml bottle</p>
+                                        <span class="item-price">Rp. 2.500.000</span>
+                                        <span class="item-qty">Qty: 1</span>
+                                    </div>
+                                </div>
+                                <div class="order-item">
+                                    <img src="https://i.pinimg.com/736x/26/c2/a3/26c2a3026b37abc40b623fa900343443.jpg" alt="YSL Libre">
+                                    <div class="item-info">
+                                        <h4>YSL Libre Eau de Parfum</h4>
+                                        <p>90ml bottle</p>
+                                        <span class="item-price">Rp. 2.400.000</span>
+                                        <span class="item-qty">Qty: 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-actions">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-redo"></i> Reorder</a>
+                                <a href="order-detail.html" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-meta">
+                                <span class="order-number">Order #AE-2025-0822</span>
+                                <span class="order-date">Placed on Juni 17, 2025</span>
+                            </div>
+                            <div class="order-status processing">
+                                <i class="fas fa-shipping-fast"></i> Shipped
+                            </div>
+                            <div class="order-total">
+                                Rp. 9.680.000
+                            </div>
+                        </div>
+                        <div class="order-details">
+                            <div class="order-items">
+                                <div class="order-item">
+                                    <img src="https://i.pinimg.com/736x/f7/38/f1/f738f18e135d1c3645ccd643f997f81d.jpg" alt="Jo Malone Peony & Blush Suede">
+                                    <div class="item-info">
+                                        <h4>Jo Malone Peony & Blush Suede</h4>
+                                        <p>100ml bottle</p>
+                                        <span class="item-price">Rp. 2.800.000</span>
+                                        <span class="item-qty">Qty: 1</span>
+                                    </div>
+                                </div>
+                                <div class="order-item">
+                                   <img src="https://i.pinimg.com/736x/6b/1a/45/6b1a4595e6b7b34e56f333f8412e228d.jpg" alt="Salvatore Ferragamo Uomo Signature">
+                                    <div class="item-info">
+                                        <h4>Salvatore Ferragamo Uomo Signature</h4>
+                                        <p>100ml bottle</p>
+                                        <span class="item-price">Rp. 2.800.000</span>
+                                        <span class="item-qty">Qty: 1</span>
+                                    </div>
+                                </div>
+                                <div class="order-item">
+                                    <img src="https://i.pinimg.com/736x/df/a6/1b/dfa61b3132a1217e8fe0575352a6e978.jpg" alt="Tom Ford Black Orchid">
+                                    <div class="item-info">
+                                        <h4>Tom Ford Black Orchid</h4>
+                                        <p>100ml bottle</p>
+                                        <span class="item-price">Rp. 3.200.000</span>
+                                        <span class="item-qty">Qty: 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-actions">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-redo"></i> Reorder</a>
+                                <a href="order-detail.html" class="btn">View Details</a>
+                                <a href="#" class="btn btn-outline"><i class="fas fa-truck"></i> Track Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="btn" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                    <button class="btn active">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Aroma Essence</h3>
+                    <p>Providing pure, therapeutic-grade essential oils and natural wellness products since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop Products</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get 10% off your first order and receive exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Aroma Essence. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Essence Shop - Articles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="article-page">
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/parfume.png" alt="Flower Logo" class="flower-logo">
+                <div class="logo">Aroma Essence</div>
+            </div>
+                        <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html" class="active">Articles</a></li>
+                <li><a href="products.html">Products Catalog</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                <li><a href="order-history.html">History Transaction</a></li>
+                <li><a href="login.html" class="signup-btn">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+  <main>
+        <section class="page-header">
+            <h1>Aromatherapy Articles</h1>
+            <p>Learn about the benefits and uses of essential oils</p>
+        </section>
+
+        <section class="category-section">
+            <div class="container">
+                <form method="get" class="category-filter-form">
+                    <div class="category-dropdown">
+                        <button type="button" class="category-dropbtn">Categories</button>
+                        <div class="category-dropdown-content">
+                            <a href="?category=all">All Articles</a>
+                            <a href="?category=Parfum Baru">Parfum Baru</a>
+                            <a href="?category=Tips Parfum">Tips Parfum</a>
+                            <a href="?category=Sejarah dan Budaya Parfum">Sejarah dan Budaya Parfum</a>
+                            <a href="?category=Rekomendasi Musiman">Rekomendasi Musiman</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="article-archive">
+            <div class="container">
+                <div class="article-list">
+                    <!-- Parfum Baru -->
+                    <div class="article-card" data-category="Parfum Baru">
+                        <div class="article-image">
+                            <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1626265466/cilxl3bipbrzwbgpm8ca.jpg" alt="Article Image">
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Parfum Baru</span>
+                            <h2><a href="article-detail.html">Parfum Eksklusif 2024: Aroma Musim Semi Terbaru</a></h2>
+                            <p class="article-excerpt">Kenali parfum terbaru dari Aroma Essence yang menghadirkan sentuhan bunga musim semi dan aroma citrus menyegarkan.</p>
+                            <div class="article-meta">
+                                <span class="article-date">21 April 2024</span>
+                                <span class="article-read-time">4 menit baca</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tips Parfum -->
+                    <div class="article-card" data-category="Tips Parfum">
+                        <div class="article-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0249/6341/6160/files/Tips_Memakai_Parfum_Agar_Tahan_Lama_480x480.webp?v=1700406649" alt="Article Image">
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Tips Parfum</span>
+                            <h2><a href="article-detail-tips.html">Cara Memakai Parfum agar Tahan Lama</a></h2>
+                            <p class="article-excerpt">Simak tips praktis agar aroma parfum Anda bertahan sepanjang hari tanpa harus menyemprotkan ulang.</p>
+                            <div class="article-meta">
+                                <span class="article-date">18 April 2024</span>
+                                <span class="article-read-time">3 menit baca</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sejarah dan Budaya Parfum -->
+                    <div class="article-card" data-category="Sejarah dan Budaya Parfum">
+                        <div class="article-image">
+                            <img src="https://cdn4.beautinow.com/wp-content/uploads/2023/08/9d844efefb4d5713caa7e3bc0b175b73_93f4097d2a104fe9be0351a6a18309f5.jpgv=1691390512" alt="Article Image">
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Sejarah dan Budaya Parfum</span>
+                            <h2><a href="article-detail-sejarah.html">Perjalanan Parfum dari Mesir Kuno ke Dunia Modern</a></h2>
+                            <p class="article-excerpt">Temukan sejarah parfum dari zaman Mesir Kuno hingga menjadi simbol gaya hidup modern saat ini.</p>
+                            <div class="article-meta">
+                                <span class="article-date">10 April 2024</span>
+                                <span class="article-read-time">6 menit baca</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rekomendasi Musiman -->
+                    <div class="article-card" data-category="Rekomendasi Musiman">
+                        <div class="article-image">
+                            <img src="https://i.pinimg.com/736x/99/57/b1/9957b1513b25f560b3392f389fc34067.jpg" alt="Article Image">
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Rekomendasi Musiman</span>
+                            <h2><a href="article-detail-rekom.html">5 Rekomendasi Parfum untuk Musim Panas</a></h2>
+                            <p class="article-excerpt">Aroma ringan dan segar yang cocok digunakan saat cuaca panas dan aktivitas luar ruangan.</p>
+                            <div class="article-meta">
+                                <span class="article-date">5 April 2024</span>
+                                <span class="article-read-time">4 menit baca</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tips Parfum -->
+                    <div class="article-card" data-category="Tips Parfum">
+                        <div class="article-image">
+                            <img src="https://i.pinimg.com/736x/b7/98/59/b7985927f21e1f9a1f984474fc9d5c34.jpg" alt="Article Image">
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Tips Parfum</span>
+                            <h2><a href="article-detail-tipsrusak.html">Cara Menyimpan Parfum agar Tidak Cepat Rusak</a></h2>
+                            <p class="article-excerpt">Pelajari tempat dan cara terbaik menyimpan parfum agar kualitas aromanya tetap terjaga.</p>
+                            <div class="article-meta">
+                                <span class="article-date">28 Maret 2024</span>
+                                <span class="article-read-time">5 menit baca</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Article -->
+                    <div class="article-card" data-category="Parfum Baru">
+                        <div class="article-image">
+                            <img src="https://i.pinimg.com/736x/32/6c/51/326c51d61ee44359734610a6d0e1c30c.jpg" alt="Article Image">
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Parfum Baru</span>
+                            <h2><a href="article-detail-aromamalam.html">Aroma Malam Hari: Parfum Terbaru 2025</a></h2>
+                            <p class="article-excerpt">Jelajahi parfum malam terbaru dari Aroma Essence dengan nuansa kayu dan rempah yang memikat.</p>
+                            <div class="article-meta">
+                                <span class="article-date">15 Mei 2025</span>
+                                <span class="article-read-time">4 menit baca</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="btn active">1</button>
+                    <button class="btn"><a href="page-2article.html">2</a></button>
+                    <button class="btn"><a href="page-2article.html">Next <i class="fas fa-chevron-right"></i></a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-center">
+        <div class="footer-logo">
+            <div class="logo-container">
+                <img src="images/parfume.png" alt="Flower Logo" class="flower-logo" />
+                <div class="logo">Aroma Essence</div>
+            </div>
+            <p class="footer-tagline">
+                Luxury fragrances crafted with the finest ingredients.
+            </p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Product</a>
+            <a href="#">New Collection</a>
+            <a href="#">For Him</a>
+            <a href="#">Aroma Essence</a>
+            <a href="#">For Her</a>
+            <a href="#">About</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+        <div class="footer-copyright">
+            © 2024 Aroma Essence. All rights reserved.
+        </div>
+        <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Shipping Policy</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

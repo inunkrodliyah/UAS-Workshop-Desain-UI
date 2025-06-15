@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Essence Shop - Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <body class="checkout-page">
+    <header>
+               <!-- Navbar -->
+<nav>
+  <div class="logo-container">
+    <img src="images/parfume.png" alt="Flower Logo" class="flower-logo">
+    <div class="logo">Aroma Essence</div>
+  </div>
+              <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+ <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html" >Articles</a></li>
+                <li><a href="products.html">Products Catalog</a></li>
+                <li><a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                <li><a href="order-history.html">History Transaction</a></li>
+                <li><a href="login.html" class="signup-btn">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Checkout</h1>
+                <div class="checkout-steps">
+                    <div class="step active">
+                        <span>1</span>
+                        <span>Shipping</span>
+                    </div>
+                    <div class="step">
+                        <span>2</span>
+                        <span>Payment</span>
+                    </div>
+                    <div class="step">
+                        <span>3</span>
+                        <span>Review</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="checkout-process">
+            <div class="container">
+                <div class="checkout-grid">
+                    <div class="checkout-form">
+                        <h2>Shipping Information</h2>
+                        <form id="shipping-form">
+                            <div class="form-group">
+                                <label for="email">Alamat Email</label>
+                                <input type="email" id="email" required>
+                                <p class="form-note">Kami akan mengirimkan konfirmasi pesanan Anda di sini</p>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">Nama Depan</label>
+                                    <input type="text" id="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Nama Belakang</label>
+                                    <input type="text" id="last-name" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Alamat Rumah</label>
+                                <input type="text" id="address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address2">Kompleks, No. Unit, dan Lainnya. (Optional)</label>
+                                <input type="text" id="address2">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="country">Negara</label>
+                                    <select id="country" required>
+                                        <option value="">Pilih Negara</option>
+                                        <option value="Indonesia">Indonesia</option>
+                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Singapura">Singapura</option>
+                                        <!-- More countries -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">Provinsi</label>
+                                    <select id="state" required>
+                                        <option value="">Select State</option>
+                                        <option value="JT">Jawa Timur</option>
+                                        <option value="JB">Jawa Barat</option>
+                                        <option value="JG">Jawa Tengah</option>
+                                        <!-- More states -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">Kota</label>
+                                    <input type="text" id="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">Kode Pos</label>
+                                    <input type="text" id="zip" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Nomer Telepon</label>
+                                <input type="tel" id="phone" required>
+                                <p class="form-note">Untuk pertanyaan pengiriman saja</p>
+                            </div>
+
+                            <div class="form-group shipping-method">
+  <h3>Shipping Method</h3>
+  <div class="radio-group">
+    <label class="radio-option">
+      <input type="radio" name="shipping" checked>
+      <span class="radio-label">
+        <div class="method">Standard Shipping</div>
+        <div class="details">3-5 hari kerja</div>
+        <div class="price">Free</div>
+      </span>
+    </label>
+
+    <label class="radio-option">
+      <input type="radio" name="shipping">
+      <span class="radio-label">
+        <div class="method">Express Shipping</div>
+        <div class="details">1-2 hari kerja</div>
+        <div class="price">Rp 20.000</div>
+      </span>
+    </label>
+  </div>
+</div>
+
+<style>
+     .shipping-method {
+  margin-top: 20px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.radio-option:hover {
+  border-color: #aaa;
+}
+
+.radio-option input[type="radio"] {
+  margin-top: 5px;
+}
+
+.radio-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-label .method {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.radio-label .details {
+  font-size: 14px;
+  color: #666;
+}
+
+.radio-label .price {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #b38b7d;
+}
+</style>
+
+
+                            <div class="form-actions">
+                                <a href="cart.html" class="btn back-btn"><i class="fas fa-chevron-left"></i> Back to Cart</a>
+                                <button type="submit" class="btn next-btn">Continue to Payment</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-items">
+    <div class="summary-item">
+        <div class="item-image">
+            <img src="https://i.pinimg.com/736x/fc/67/26/fc6726e9470514e85ec28cdbdf15dd92.jpg" alt="Dior Sauvage">
+            <span class="quantity">1</span>
+        </div>
+        <div class="item-info">
+            <h4>Dior Sauvage Eau de Parfum</h4>
+            <p>100ml - Parfum maskulin segar dan spicy</p>
+        </div>
+        <div class="item-price">Rp 2.500.000</div>
+    </div>
+    <div class="summary-item">
+        <div class="item-image">
+            <img src="https://i.pinimg.com/736x/26/c2/a3/26c2a3026b37abc40b623fa900343443.jpg" alt="YSL Libre">
+            <span class="quantity">1</span>
+        </div>
+        <div class="item-info">
+            <h4>YSL Libre Eau de Parfum</h4>
+            <p>90ml - Aroma lavender Prancis & jeruk Maroko</p>
+        </div>
+        <div class="item-price">Rp 2.400.000</div>
+    </div>
+</div>
+
+<div class="summary-totals">
+    <div class="total-row">
+        <span>Subtotal</span>
+        <span>Rp 4.900.000</span>
+    </div>
+    <div class="total-row">
+        <span>Shipping</span>
+        <span>Free</span>
+    </div>
+    <div class="total-row">
+        <span>Tax (10%)</span>
+        <span>Rp 490.000</span>
+    </div>
+    <div class="total-row grand-total">
+        <span>Total</span>
+        <span>Rp 5.390.000</span>
+    </div>
+</div>
+
+
+                        <div class="customer-support">
+                            <h3>Need Help?</h3>
+                            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                            <p><i class="fas fa-envelope"></i> support@aromaessence.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <footer class="footer-center">
+      <div class="footer-logo">
+        <div class="logo-container">
+          <img src="images/parfume.png" alt="Flower Logo" class="flower-logo" />
+          <div class="logo">Aroma Essence</div>
+        </div>
+        <p class="footer-tagline">
+          Luxury fragrances crafted with the finest ingredients.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Product</a>
+        <a href="#">New Collection</a>
+        <a href="#">For Him</a>
+        <a href="#">Aroma Essence</a>
+        <a href="#">For Her</a>
+        <a href="#">About</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+      <div class="footer-copyright">
+        © 2024 Aroma Essence. All rights reserved.
+      </div>
+      <div class="footer-policies">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Shipping Policy</a>
+      </div>
+    </footer>   
+
+    <script src="script.js"></script>
+</body>
+</html>

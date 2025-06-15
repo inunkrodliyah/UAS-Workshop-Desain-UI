@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Essence Shop - Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="product-page">
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/parfume.png" alt="Flower Logo" class="flower-logo">
+                <div class="logo">Aroma Essence</div>
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="products.html" class="active">Products Catalog</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                <li><a href="order-history.html">History Transaction</a></li>
+                <li><a href="login.html" class="signup-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Products</h1>
+                <p>Explore our collection of premium essential oils and aromatherapy products</p>
+            </div>
+        </section>
+
+        <section class="product-catalog">
+            <div class="container">
+                <div class="filter-section">
+                    <div class="search-box">
+                        <input type="text" id="product-search" placeholder="Search products...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 9 -->
+                    <div class="product-card" data-category="parfum-pria" data-price="2750000">
+                        <img src="https://i.pinimg.com/736x/92/6d/b8/926db8452f0ed3f83ed500d05082b651.jpg" alt="Maison Margiela Replica Jazz Club">
+                        <h3>Maison Margiela Replica Jazz Club</h3>
+                        <p class="product-description">Aroma hangat bergaya speakeasy: rum, tembakau, dan vanila menghadirkan suasana malam klasik.</p>
+                        <p class="product-price">Rp. 2.750.000</p>
+                        <a href="product-detail.html?product=replica-jazz-club" class="btn product-action-btn">View</a>
+                        <button class="btn product-action-btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+
+<!-- Product 10 -->
+<div class="product-card" data-category="parfum" data-price="2650000">
+    <img src="https://i.pinimg.com/736x/40/21/cd/4021cddeb133049f980694e8c9a1361a.jpg" alt="Armani Acqua di Giò Profumo">
+    <h3>Armani Acqua di Giò Profumo</h3>
+    <p class="product-description">Aroma laut yang elegan dan aromatik dengan sentuhan dupa dan patchouli untuk pria modern.</p>
+    <p class="product-price">Rp. 2.650.000</p>
+    <a href="product-detail.html?product=acqua-profumo" class="btn product-action-btn">View</a>
+                        <button class="btn product-action-btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+
+<!-- Product 11 -->
+<div class="product-card" data-category="parfum" data-price="3100000">
+    <img src="https://i.pinimg.com/736x/3e/85/49/3e85499a311d6c7400bc2dbd780ee50c.jpg" alt="Nishane Hacivat Extrait de Parfum">
+    <h3>Nishane Hacivat Extrait</h3>
+    <p class="product-description">Parfum niche ikonik dengan aroma nanas, bergamot, dan oakmoss yang tajam dan memikat.</p>
+    <p class="product-price">Rp. 3.100.000</p>
+    <a href="product-detail.html?product=nishane-hacivat" class="btn product-action-btn">View</a>
+                        <button class="btn product-action-btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+
+<!-- Product 12 -->
+<div class="product-card" data-category="parfum" data-price="2850000">
+    <img src="https://i.pinimg.com/736x/3f/fa/fe/3ffafe097ff5e0fcf7220fd17f3d81f9.jpg" alt="Byredo Gypsy Water">
+    <h3>Byredo Gypsy Water</h3>
+    <p class="product-description">Parfum unisex lembut dengan kayu pinus, vanilla, dan juniper, menciptakan suasana alam bebas dan tenang.</p>
+    <p class="product-price">Rp. 2.850.000</p>
+    <a href="product-detail.html?product=byredo-gypsy-water" class="btn product-action-btn">View</a>
+                        <button class="btn product-action-btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+
+                </div>
+
+                <div class="pagination">
+                    <button class="btn"><a href="products.html"><i class="fas fa-chevron-left"></i>Previous </i></a></button>
+                    <button class="btn"><a href="products.html">1</a></button>
+                    <button class="btn active">2</button>
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-center">
+        <div class="footer-logo">
+            <div class="logo-container">
+                <img src="images/parfume.png" alt="Flower Logo" class="flower-logo" />
+                <div class="logo">Aroma Essence</div>
+            </div>
+            <p class="footer-tagline">
+                Luxury fragrances crafted with the finest ingredients.
+            </p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Product</a>
+            <a href="#">New Collection</a>
+            <a href="#">For Him</a>
+            <a href="#">Aroma Essence</a>
+            <a href="#">For Her</a>
+            <a href="#">About</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+        <div class="footer-copyright">
+            © 2024 Aroma Essence. All rights reserved.
+        </div>
+        <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Shipping Policy</a>
+        </div>
+    </footer>
+
+    <style>
+        /* ===== PRODUCT CATALOG ===== */
+        .product-page .page-header {
+            background-image: url('https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw5bdd28dd/images/beauty/0-HOME/SPA/Spa_PlazaAthenee_3700x2000.jpg?sw=2048');
+        }
+
+        .product-catalog {
+            padding: clamp(40px, 5vw, 60px) 0;
+        }
+
+        .filter-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .filter-options {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .filter-options select {
+            padding: clamp(8px, 2vw, 10px) 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(14px, 2vw, 16px);
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input {
+            padding: clamp(8px, 2vw, 10px) 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(14px, 2vw, 16px);
+        }
+
+        .search-box button {
+            padding: clamp(8px, 2vw, 10px) 15px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: clamp(14px, 2vw, 16px);
+        }
+
+        .search-box button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+            padding: 10px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .product-card .category {
+            display: inline-block;
+            font-size: clamp(10px, 1.5vw, 12px);
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .product-card h3 {
+            font-size: clamp(14px, 2vw, 18px);
+            margin-bottom: 8px;
+        }
+
+        .product-card p {
+            color: var(--text-light);
+            margin-bottom: 10px;
+            font-size: clamp(12px, 1.5vw, 14px);
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: clamp(14px, 2vw, 16px);
+        }
+
+        .product-card .original-price {
+            text-decoration: line-through;
+            color: var(--text-lighter);
+            font-size: clamp(12px, 1.5vw, 14px);
+            margin-left: 5px;
+        }
+
+        .product-card .discount {
+            color: var(--error-color);
+            font-size: clamp(12px, 1.5vw, 14px);
+            margin-left: 5px;
+        }
+
+        .product-action-btn {
+            display: inline-block;
+            padding: clamp(8px, 2vw, 12px) 20px; /* Fixed padding for consistent width */
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: clamp(14px, 2vw, 16px);
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 5px;
+            width: 100%; /* Ensure equal width by setting to 100% of parent */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        .product-action-btn:hover {
+            background-color: var(--primary-dark);
+            color: var(--white);
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            gap: 10px;
+        }
+
+        .pagination .btn {
+            padding: clamp(6px, 1.5vw, 8px) clamp(10px, 2vw, 15px);
+            border: 1px solid #e0d6cd;
+            background: var(--white);
+            color: var(--text-dark);
+            border-radius: 4px;
+            transition: all 0.3s;
+            font-size: clamp(12px, 2vw, 16px);
+        }
+
+        .pagination .btn:hover,
+        .pagination .btn.active {
+            background: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+
+        /* Notification Style */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+            animation: fadeInOut 3s ease-in-out;
+        }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: translateY(-20px); }
+            10% { opacity: 1; transform: translateY(0); }
+            90% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-20px); }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            document.body.appendChild(notification);
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    notification.textContent = 'Berhasil ditambahkan ke keranjang';
+                    notification.style.display = 'block';
+                    setTimeout(() => {
+                        notification.style.display = 'none';
+                    }, 3000);
+
+                    // Update cart count (example logic)
+                    let cartCount = parseInt(document.getElementById('cart-count').textContent);
+                    document.getElementById('cart-count').textContent = cartCount + 1;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aroma Essence Shop - Shopping Cart</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body class="cart-page">
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="images/parfume.png" alt="Flower Logo" class="flower-logo"/>
+        <div class="logo">Aroma Essence</div>
+      </div>
+      <div class="hamburger-menu">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="products.html">Products Catalog</a></li>
+        <li><a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i> <span id="cart-count">2</span></a></li>
+        <li><a href="order-history.html">History Transaction</a></li>
+        <li><a href="login.html" class="signup-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Your Shopping Cart</h1>
+        <p>Review your items before checkout</p>
+      </div>
+    </section>
+
+    <section class="shopping-cart">
+      <div class="container">
+        <div class="cart-grid">
+          <div class="cart-items">
+            <div class="cart-header">
+              <h2>2 Items in Your Cart</h2>
+              <a href="products.html" class="continue-shopping"><i class="fas fa-chevron-left"></i> Continue Shopping</a>
+            </div>
+
+            <!-- Cart Item 1: Dior Sauvage -->
+            <div class="cart-item">
+              <div class="item-image">
+                <img src="https://i.pinimg.com/736x/fc/67/26/fc6726e9470514e85ec28cdbdf15dd92.jpg" alt="Dior Sauvage">
+              </div>
+              <div class="item-details">
+                <h3><a href="product-detail.html?product=dior-sauvage">Dior Sauvage Eau de Parfum</a></h3>
+                <p>Maskulin, segar, spicy – untuk pria percaya diri.</p>
+                <span class="item-price">Rp. 2.500.000</span>
+                <div class="item-actions">
+                  <div class="quantity">
+                    <button class="qty-minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" value="1" min="1">
+                    <button class="qty-plus"><i class="fas fa-plus"></i></button>
+                  </div>
+                  <a href="#" class="remove-item"><i class="far fa-trash-alt"></i> Remove</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cart Item 2: YSL Libre -->
+            <div class="cart-item">
+              <div class="item-image">
+                <img src="https://i.pinimg.com/736x/26/c2/a3/26c2a3026b37abc40b623fa900343443.jpg" alt="YSL Libre">
+              </div>
+              <div class="item-details">
+                <h3><a href="product-detail-ysl.html">YSL Libre Eau de Parfum</a></h3>
+                <p>Lavender Prancis & jeruk Maroko, elegan & berani.</p>
+                <span class="item-price">Rp. 2.400.000</span>
+                <div class="item-actions">
+                  <div class="quantity">
+                    <button class="qty-minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" value="1" min="1">
+                    <button class="qty-plus"><i class="fas fa-plus"></i></button>
+                  </div>
+                  <a href="#" class="remove-item"><i class="far fa-trash-alt"></i> Remove</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-promo">
+              <h3>Promo Code</h3>
+              <div class="promo-input">
+                <input type="text" placeholder="Enter promo code">
+                <button class="btn apply-promo">Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-details">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span>Rp. 4.900.000</span>
+              </div>
+              <div class="summary-row">
+                <span>Shipping</span>
+                <span>Free</span>
+              </div>
+              <div class="summary-row">
+                <span>Tax</span>
+                <span>Rp. 0</span>
+              </div>
+              <div class="summary-row total">
+                <span>Total</span>
+                <span>Rp. 4.900.000</span>
+              </div>
+            </div>
+            <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+            <div class="payment-methods">
+              <img src="https://i.pinimg.com/736x/a6/cb/e6/a6cbe6a3c5e9b03ef09ebfc0969323d2.jpg" alt="ShopeePay">
+              <img src="https://i.pinimg.com/736x/50/4d/28/504d289fb3f982620fec7c4f61249e88.jpg" alt="BCA">
+              <img src="https://i.pinimg.com/736x/33/70/c5/3370c58ee958173b7935bf5d0deb8553.jpg" alt="Dana">
+              <img src="https://i.pinimg.com/736x/91/69/4c/91694c8d48ed332433810988e7e032d1.jpg" alt="Gopay">
+            </div>
+          </div>
+        </div>
+
+        <div class="frequently-bought">
+          <h3>Frequently Bought Together</h3>
+          <div class="product-grid">
+            <!-- Optionally filled with related items -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-center">
+    <div class="footer-logo">
+      <div class="logo-container">
+        <img src="images/parfume.png" alt="Flower Logo" class="flower-logo"/>
+        <div class="logo">Aroma Essence</div>
+      </div>
+      <p class="footer-tagline">Luxury fragrances crafted with the finest ingredients.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Product</a>
+      <a href="#">New Collection</a>
+      <a href="#">For Him</a>
+      <a href="#">Aroma Essence</a>
+      <a href="#">For Her</a>
+      <a href="#">About</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+    <div class="footer-copyright">
+      © 2024 Aroma Essence. All rights reserved.
+    </div>
+    <div class="footer-policies">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Shipping Policy</a>
+    </div>
+  </footer>
+
+  <style>
+    /* ===== SHOPPING CART ===== */
+    .cart-page .page-header {
+      background-image: url('https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw2ff19b99/images/beauty/0-HOME/SPA/A24_DIOR_SPADOHA_3700x2000.jpg?sw=2048');
+    }
+
+    .shopping-cart {
+      padding: clamp(40px, 5vw, 60px) 0;
+    }
+
+    .cart-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
+
+    .cart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .continue-shopping {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--primary-color);
+      font-weight: 500;
+      font-size: clamp(14px, 2vw, 16px);
+    }
+
+    .continue-shopping:hover {
+      color: var(--primary-dark);
+    }
+
+    .cart-item {
+      display: flex;
+      gap: 20px;
+      background: var(--white);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+
+    .item-image {
+      flex: 0 0 clamp(80px, 15vw, 100px);
+    }
+
+    .item-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .item-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .item-details h3 {
+      font-size: clamp(16px, 2.5vw, 20px);
+    }
+
+    .item-details p {
+      color: var(--text-light);
+      font-size: clamp(12px, 1.5vw, 14px);
+    }
+
+    .item-price {
+      font-weight: bold;
+      color: var(--primary-color);
+      font-size: clamp(14px, 2vw, 18px);
+    }
+
+    .item-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+    }
+
+    .quantity button {
+      width: clamp(25px, 5vw, 30px);
+      height: clamp(25px, 5vw, 30px);
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      font-size: clamp(12px, 2vw, 14px);
+    }
+
+    .quantity input {
+      width: clamp(30px, 6vw, 40px);
+      height: clamp(25px, 5vw, 30px);
+      text-align: center;
+      border: 1px solid #ddd;
+      border-left: none;
+      border-right: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(12px, 2vw, 14px);
+    }
+
+    .remove-item {
+      color: var(--error-color);
+      font-size: clamp(12px, 1.5vw, 14px);
+    }
+
+    .remove-item:hover {
+      color: #c0392b;
+    }
+
+    .cart-promo {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .cart-promo h3 {
+      font-size: clamp(16px, 2.5vw, 20px);
+      margin-bottom: 15px;
+    }
+
+    .promo-input {
+      display: flex;
+      gap: 10px;
+    }
+
+    .promo-input input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(14px, 2vw, 16px);
+    }
+
+    .promo-input .btn {
+      padding: clamp(8px, 2vw, 10px) clamp(15px, 3vw, 20px);
+      font-size: clamp(14px, 2vw, 16px);
+    }
+
+    .cart-summary {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .cart-summary h2 {
+      font-size: clamp(18px, 3vw, 24px);
+      margin-bottom: 20px;
+    }
+
+    .summary-details {
+      margin-bottom: 20px;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      font-size: clamp(14px, 2vw, 16px);
+    }
+
+    .summary-row.total {
+      font-weight: bold;
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: var(--primary-color);
+    }
+
+    .checkout-btn {
+      width: 100%;
+      padding: clamp(10px, 2vw, 14px);
+      font-size: clamp(14px, 2vw, 16px);
+    }
+
+    .payment-methods {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .payment-methods img {
+      width: clamp(40px, 5vw, 60px);
+      height: clamp(40px, 5vw, 60px);
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .payment-methods img:hover {
+      transform: scale(1.1);
+    }
+
+    .frequently-bought {
+      margin-top: 40px;
+    }
+
+    .frequently-bought h3 {
+      font-size: clamp(18px, 3vw, 24px);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .frequently-bought .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    /* Notification Style */
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #2ecc71;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: none;
+      animation: fadeInOut 3s ease-in-out;
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translateY(-20px); }
+      10% { opacity: 1; transform: translateY(0); }
+      90% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(-20px); }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const applyPromoButton = document.querySelector('.apply-promo');
+      const notification = document.createElement('div');
+      notification.className = 'notification';
+      document.body.appendChild(notification);
+
+      applyPromoButton.addEventListener('click', () => {
+        notification.textContent = 'Promo berhasil ditambahkan';
+        notification.style.display = 'block';
+        setTimeout(() => {
+          notification.style.display = 'none';
+        }, 3000);
+      });
+
+      // Existing quantity adjustment logic (if any) can go here
+    });
+  </script>
+</body>
+</html>
