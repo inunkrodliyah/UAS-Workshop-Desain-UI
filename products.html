@@ -19,7 +19,6 @@
                 <span></span>
                 <span></span>
             </div>
-            <script src="js/script.js"></script>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="articles.html">Articles</a></li>
@@ -137,6 +136,17 @@
                 </div>
             </div>
         </section>
+
+        <!-- Popup for Add to Cart Success -->
+        <div class="cart-popup" id="cart-popup">
+            <div class="popup-overlay"></div>
+            <div class="popup-content">
+                <span class="close-popup" id="close-popup">×</span>
+                <h3>Berhasil Ditambahkan ke Keranjang!</h3>
+                <p>Produk telah ditambahkan ke keranjang belanja Anda.</p>
+                <a href="cart.html" class="btn view-cart-btn">Lihat Keranjang</a>
+            </div>
+        </div>
     </main>
 
     <footer class="footer-center">
@@ -176,7 +186,6 @@
 
     <style>
         /* ===== PRODUCT CATALOG ===== */
-        
         .product-page .page-header {
             background-image: url('https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw5bdd28dd/images/beauty/0-HOME/SPA/Spa_PlazaAthenee_3700x2000.jpg?sw=2048');
         }
@@ -192,20 +201,6 @@
             margin-bottom: 30px;
             flex-wrap: wrap;
             gap: 20px;
-        }
-
-        .filter-options {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .filter-options select {
-            padding: clamp(8px, 2vw, 10px) 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: clamp(14px, 2vw, 16px);
         }
 
         .search-box {
@@ -263,15 +258,6 @@
             border-radius: 4px;
         }
 
-        .product-card .category {
-            display: inline-block;
-            font-size: clamp(10px, 1.5vw, 12px);
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
         .product-card h3 {
             font-size: clamp(14px, 2vw, 18px);
             margin-bottom: 8px;
@@ -283,28 +269,15 @@
             font-size: clamp(12px, 1.5vw, 14px);
         }
 
-        .product-card .price {
+        .product-card .product-price {
             font-weight: bold;
             color: var(--primary-color);
             font-size: clamp(14px, 2vw, 16px);
         }
 
-        .product-card .original-price {
-            text-decoration: line-through;
-            color: var(--text-lighter);
-            font-size: clamp(12px, 1.5vw, 14px);
-            margin-left: 5px;
-        }
-
-        .product-card .discount {
-            color: var(--error-color);
-            font-size: clamp(12px, 1.5vw, 14px);
-            margin-left: 5px;
-        }
-
         .product-action-btn {
             display: inline-block;
-            padding: clamp(8px, 2vw, 12px) 20px; /* Fixed padding for consistent width */
+            padding: clamp(8px, 2vw, 12px) 20px;
             background-color: var(--primary-color);
             color: var(--white);
             border: none;
@@ -317,8 +290,8 @@
             text-align: center;
             text-decoration: none;
             margin-top: 5px;
-            width: 100%; /* Ensure equal width by setting to 100% of parent */
-            box-sizing: border-box; /* Include padding in width calculation */
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .product-action-btn:hover {
@@ -351,48 +324,115 @@
             border-color: var(--primary-color);
         }
 
-        /* Notification Style */
-        .notification {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #2ecc71;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 4px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
+        /* Popup Styles */
+        .cart-popup {
             display: none;
-            animation: fadeInOut 3s ease-in-out;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
         }
 
-        @keyframes fadeInOut {
-            0% { opacity: 0; transform: translateY(-20px); }
-            10% { opacity: 1; transform: translateY(0); }
-            90% { opacity: 1; transform: translateY(0); }
-            100% { opacity: 0; transform: translateY(-20px); }
+        .popup-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .popup-content {
+            position: relative;
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .close-popup:hover {
+            color: #b38b7d;
+        }
+
+        .popup-content h3 {
+            color: #5a4a42;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .popup-content p {
+            color: #666;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .view-cart-btn {
+            background-color: #b38b7d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .view-cart-btn:hover {
+            background-color: #8b6b5e;
         }
     </style>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
-            const notification = document.createElement('div');
-            notification.className = 'notification';
-            document.body.appendChild(notification);
+            const cartPopup = document.getElementById('cart-popup');
+            const closePopup = document.getElementById('close-popup');
+            const cartCount = document.getElementById('cart-count');
 
             addToCartButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    notification.textContent = 'Berhasil ditambahkan ke keranjang';
-                    notification.style.display = 'block';
-                    setTimeout(() => {
-                        notification.style.display = 'none';
-                    }, 3000);
+                    // Show popup
+                    cartPopup.style.display = 'block';
 
-                    // Update cart count (example logic)
-                    let cartCount = parseInt(document.getElementById('cart-count').textContent);
-                    document.getElementById('cart-count').textContent = cartCount + 1;
+                    // Update cart count
+                    let currentCount = parseInt(cartCount.textContent);
+                    cartCount.textContent = currentCount + 1;
+
+                    // Auto-hide popup after 3 seconds
+                    setTimeout(() => {
+                        cartPopup.style.display = 'none';
+                    }, 3000);
                 });
+            });
+
+            // Close popup when clicking the close button
+            closePopup.addEventListener('click', () => {
+                cartPopup.style.display = 'none';
+            });
+
+            // Prevent popup from closing when clicking inside content
+            document.querySelector('.popup-content').addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+
+            // Close popup when clicking outside
+            cartPopup.addEventListener('click', () => {
+                cartPopup.style.display = 'none';
             });
         });
     </script>
