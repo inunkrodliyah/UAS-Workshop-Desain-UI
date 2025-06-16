@@ -198,6 +198,54 @@
         </div>
 
         <style>
+            .product-tabs input[type="radio"] {
+    display: none;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .tabs label {
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #eee;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    color: black;
+  }
+
+  .tabs label:hover {
+    background: #ddd;
+  }
+
+  .tab-content {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+
+  /* Tab aktif */
+  #tab1:checked ~ .tabs label[for="tab1"],
+  #tab2:checked ~ .tabs label[for="tab2"],
+  #tab3:checked ~ .tabs label[for="tab3"],
+  #tab4:checked ~ .tabs label[for="tab4"] {
+    background: #b38b7d;
+    color: white;
+  }
+
+  /* Konten tab aktif */
+  #tab1:checked ~ .content #description,
+  #tab2:checked ~ .content #benefits,
+  #tab3:checked ~ .content #reviews,
+  #tab4:checked ~ .content #shipping {
+    display: block;
+  }
             /* Popup Styles */
             .cart-popup {
                 display: none;
